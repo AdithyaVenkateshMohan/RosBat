@@ -1,0 +1,8 @@
+prefix=/home/adithya/Ros_practice/DiffDriveRobot/FromScarRobot/mybot_ws/devel
+
+Name: random_driver
+Description: Description of random_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/adithya/Ros_practice/DiffDriveRobot/FromScarRobot/mybot_ws/devel/lib 
+Requires: 

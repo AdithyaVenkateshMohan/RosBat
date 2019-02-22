@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg="random_driver" type="random_driver" name="random_driver" />
+	<node pkg="random_driver" type="odom_graph.py" name="odom_graph" />
+
+
+</launch>
