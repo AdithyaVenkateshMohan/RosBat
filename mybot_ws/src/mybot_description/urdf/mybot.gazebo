@@ -123,7 +123,7 @@
     <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
       <visualize>true</visualize>
-      <update_rate>40</update_rate>
+      <update_rate>100</update_rate>
       <ray>
         <scan>
          <!-- <horizontal>
@@ -134,13 +134,13 @@
           </horizontal> -->
            <horizontal>
           <samples>100</samples>
-          <resolution>1</resolution>
+          <resolution>0.6</resolution>
           <min_angle>-0.523</min_angle>
           <max_angle>0.523</max_angle>
         </horizontal>
         <vertical>
           <samples>100</samples>
-          <resolution>1</resolution>
+          <resolution>0.3</resolution>
           <min_angle>0</min_angle>
           <max_angle>0.523</max_angle>
         </vertical>
@@ -148,7 +148,7 @@
         <range>
           <min>0.10</min>
           <max>30.0</max>
-          <resolution>0.01</resolution>
+          <resolution>1</resolution>
         </range>
         <noise>
           <type>gaussian</type>
@@ -157,7 +157,7 @@
                stddev of 0.01m will put 99.7% of samples within 0.03m of the true
                reading.   libgazebo_ros_gpu_laser.so -->
           <mean>0.0</mean>
-          <stddev>0.01</stddev>
+          <stddev>0.0000</stddev>
         </noise>
       </ray>
 
@@ -168,7 +168,7 @@
       <use_pointcloud2> true </use_pointcloud2>
       <topicName>/mybot/laser</topicName>
       <frameName>hokuyo</frameName>
-      <gaussianNoise>0.01</gaussianNoise>
+      <gaussianNoise>0.00</gaussianNoise>
       <updateRate>30</updateRate>
       </plugin>
     
